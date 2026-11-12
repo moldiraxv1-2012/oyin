@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="kaa">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#080f1c" />
+
+  <meta name="description" content="JÍLAN OYÍNÍ — Qaraqalpaq tilindegi neon jılan oyını." />
+
+  <title>JÍLAN OYÍNÍ</title>
+
+  <!-- Oyin logotipi -->
+  <link rel="icon" type="image/png" href="logo.png?v=20261112" />
+
+  <!-- CSS dizayn -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <main class="app">
+    <header class="topbar">
+      <div class="brand"><img class="brand-icon" src="logo.png" alt="JÍLAN OYÍNÍ"><div><h1>JÍLAN OYÍNÍ</h1><p>OYNA • ÚYREN • KU'SHEY</p></div></div>
+      <div class="stats">
+        <div class="stat"><span>BALL</span><strong id="score">0</strong></div>
+        <div class="stat"><span>JOQARÍ NÁTIYJE</span><strong id="best">0</strong></div>
+      </div>
+    </header>
+
+    <section class="game-card">
+      <div class="game-heading"><div><span class="eyebrow">ROUND · 01</span><h2>Jılan qarni ash, og'an ko'mekles!</h2></div><span class="live"><i></i> OYÍN </span></div>
+      <div class="board-wrap">
+        <canvas id="board" width="525" height="525" aria-label="Jılan oyını maydanı"></canvas>
+        <div class="overlay" id="overlay">
+          <div class="overlay-icon" id="overlayIcon">🐍</div>
+          <h2 id="overlayTitle">Xosh keldińiz!</h2>
+          <p id="overlayText">Jemisti jıynań, jılanǵa jol kórsetiń hám eń joqarı ball jıynań.</p>
+          <button id="startBtn" class="primary-btn">OYÍNDÍ BASLAW <span>→</span></button>
+        </div>
+      </div>
+      <div class="controls-row">
+        <p>⌨ <b>Basqarıw:</b> ↑ ↓ ← → yamasa W A S D</p>
+        <button id="pauseBtn" class="secondary-btn" disabled>Ⅱ DEM ALÍW </button>
+      </div>
+      <div class="mobile-controls" aria-label="Mobil basqarıw">
+        <button data-dir="up">↑</button><div><button data-dir="left">←</button><button data-dir="down">↓</button><button data-dir="right">→</button></div>
+      </div>
+    </section>
+    <footer><span>JÍLAN OYÍNÍ</span><span>Rekord ortatin'.</span></footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
